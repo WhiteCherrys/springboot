@@ -2,6 +2,7 @@ package com.example.test.service;
 
 import com.example.test.model.UserBean;
 
+import org.apache.ibatis.io.ResolverUtil;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a>This is a test page!</a>
+<span th:text="${user}" id="user_name"></span>
+<p>欢迎[[${user.name}]]</p>
+<span th:text="${user.id}"></span>
+<p th:text="${list}"></p>
+</body>
+</html>

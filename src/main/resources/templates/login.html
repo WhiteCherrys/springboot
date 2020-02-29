@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico" />
     <title>Personal</title>
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">   Google web font "Open Sans" -->
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css" th:href="@{/css/font-awesome.min.css}">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}">
 
-    <link rel="stylesheet" href="/css/demo.css" />
-    <link rel="stylesheet" href="/css/templatemo-style.css">
-    <script type="text/javascript" src="/js/modernizr.custom.86080.js"></script>
-    <script type="text/javascript" src="/js/particles.js"></script>
-    <script type="text/javascript" src="/js/app.js"></script>
+    <link rel="stylesheet" href="/css/demo.css" th:href="@{/css/demo.css}"/>
+    <link rel="stylesheet" href="/css/templatemo-style.css" th:href="@{/css/templatemo-style.css}">
+
 </head>
 
 <body>
@@ -33,18 +31,18 @@
 <div class="container-fluid">
     <div class="row cb-slideshow-text-container ">
         <div class= "tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section">
-            <header class="mb-5"><h1>Personal</h1></header>
-            <P class="mb-5"><!--A sign-up letter template with three background images shuffling by fade in out movements.--> Thank you for visiting our site!</P>
-
+            <header class="mb-5"><h1 th:text="#{LOGIN_TIP}">WhiteCherry</h1></header>
+            <p th:text="#{LOGIN_WELCOME}" class="mb-5"><!--A sign-up letter template with three background images shuffling by fade in out movements.--> Thank you for visiting our site!</p>
+            <p style="color: red" th:text="${ERROR_MESSAGE}" th:if="${not #strings.isEmpty(ERROR_MESSAGE)}"></p>
             <form role="form" action = "/loginIn" method="post" class="subscribe-form">
                 <div class="row form-section">
 
                     <div class="col-md-7 col-sm-7 col-xs-7">
-                        <input name="name" type="text" class="form-control" id="contact_email" placeholder="Your Name..." required/>
-                        <input name="password" type="password" class="form-control" id="" placeholder="Your Password..." required/>
+                        <input name="name" type="text" class="form-control" id="contact_email" placeholder="Your Name..." th:placeholder="#{LOGIN_NAME}" required/>
+                        <input name="password" type="password" class="form-control" id="" placeholder="Your Password..." th:placeholder="#{LOGIN_PASSWORD}" required/>
                     </div>
                     <div class="col-md-5 col-sm-5 col-xs-5">
-                        <button type="submit" class="tm-btn-subscribe">Login</button>
+                        <button type="submit" class="tm-btn-subscribe" th:text="#{LOGIN_LOGIN}">Login</button>
                     </div>
 
                 </div>
@@ -60,10 +58,16 @@
         </div>
     </div>
     <div class="footer-link"  >
-        <p  >Copyright © 2018 Your Company   - Design: <a rel="nofollow" href="#" target="_parent">Whitecherry</a></p>
-        <p>More information consulting E-mail: 1158943476@qq.com <a href="" target="_blank" title=""></a> <a href="" title="网页模板" target="_blank"></a></p>
+        <p>Copyright © 2018 Your Company   - Design: <a rel="nofollow" href="#" target="_parent">Whitecherry</a></p>
+        <p>More information consulting E-mail: 1158943476@qq.com <a href="" target="_blank" title=""></a></p>
+        <p>滇ICP备19010907号</p>
+        <a class="btn btn-sm" th:href="@{/login(l='zh_CN')}">中文</a>
+        <a class="btn btn-sm" th:href="@{/login(l='en_US')}">English</a>
     </div>
 </div>
+<script type="text/javascript" src="/js/modernizr.custom.86080.js" th:href="@{/js/modernizr.custom.86080.js}"></script>
+<script type="text/javascript" src="/js/particles.js" th:href="@{/js/particles.js}"></script>
+<script type="text/javascript" src="/js/app.js" th:href="@{/js/app.js}"></script>
 </body>
 
 </html>

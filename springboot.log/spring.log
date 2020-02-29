@@ -1,0 +1,17 @@
+2020-02-03 16:57:45.735  INFO 23524 --- [main] com.example.test.TestApplication         : Starting TestApplication on DESKTOP-JH6IVFV with PID 23524 (F:\IDEAProject\SpringBootTest\target\classes started by WLC in F:\IDEAProject\SpringBootTest)
+2020-02-03 16:57:45.739 DEBUG 23524 --- [main] com.example.test.TestApplication         : Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2020-02-03 16:57:45.740  INFO 23524 --- [main] com.example.test.TestApplication         : The following profiles are active: testing
+2020-02-03 16:57:47.067  INFO 23524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-02-03 16:57:47.076  INFO 23524 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-03 16:57:47.077  INFO 23524 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-02-03 16:57:47.079  INFO 23524 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-02-03 16:57:47.079  INFO 23524 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-02-03 16:57:47.079  INFO 23524 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-02-03 16:57:47.079  INFO 23524 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-02-03 16:57:47.129  INFO 23524 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-02-03 16:57:47.313  INFO 23524 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-03 16:57:47.313  INFO 23524 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1481 ms
+2020-02-03 16:57:47.741  INFO 23524 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-03 16:57:47.813  INFO 23524 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-03 16:57:48.038  INFO 23524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-02-03 16:57:48.041  INFO 23524 --- [main] com.example.test.TestApplication         : Started TestApplication in 2.821 seconds (JVM running for 6.747)
