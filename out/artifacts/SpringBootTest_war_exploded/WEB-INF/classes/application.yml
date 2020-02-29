@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    name: test
+    url: jdbc:mysql://47.98.206.63:3306/springboottest?serverTimezone=UTC
+    username: root
+    password: Root123!
+    driver-class-name: com.mysql.cj.jdbc.Driver #数据库连接驱动
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #配置映射文件
+  type-aliases-package: com.example.test.model #配置实体类
